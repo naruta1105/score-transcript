@@ -1,8 +1,26 @@
+/* Hide arrow input number */
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 #banner {
     margin: auto;
     border: 2px solid red;
     border-radius: 5px;
-    padding: 0px 20px;
+    padding: 10px 20px;
 }
 
 #banner h1 {
@@ -13,6 +31,15 @@
 #banner label {
     display: inline-block;
     margin: 0px 0px 10px;
+    padding: 5px 0px;
+}
+
+#banner input {
+    padding: 5px 0px;
+}
+
+#banner input[type=number] {
+    text-align: right;
 }
 
 #banner #fullName {
@@ -32,9 +59,16 @@
     color: red;
 }
 
+button {
+    text-align: center;
+    padding: 5px 40px;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+}
+
 #banner button {
     display: block;
-    width: 200px;
     margin: 10px auto 20px;
 }
 
@@ -75,8 +109,7 @@ td {
 }
 
 #group-btn button {
-    text-align: center;
-    width: 150px;
+    background-color: dodgerblue;
     margin-bottom: 10px;
 }
 
@@ -137,7 +170,7 @@ td {
         width: 80%;
     }
     #main #group-btn {
-        width: fit-content;
+        width: max-content;
     }
 }
 
