@@ -1,0 +1,150 @@
+#banner {
+    margin: auto;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 0px 20px;
+}
+
+#banner h1 {
+    text-align: center;
+    border-bottom: 5px double blue;
+}
+
+#banner label {
+    display: inline-block;
+    margin: 0px 0px 10px;
+}
+
+#banner #fullName {
+    margin: 0px 0px 10px;
+}
+
+#banner .grade {
+    width: 20%;
+}
+
+#banner p {
+    display: inline-block;
+    width: 40%;
+    margin: 0px;
+    text-align: center;
+    font-style: italic;
+    color: red;
+}
+
+#banner button {
+    display: block;
+    width: 200px;
+    margin: 10px auto 20px;
+}
+
+#main {
+    margin: 20px auto 0px;
+}
+
+#main table {
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#main .idx {
+    width: 10%;
+}
+
+#main .name {
+    width: 40%;
+}
+
+#main .grade {
+    width: 12.5%;
+}
+
+#main .btnDelete {
+    width: 100%;
+    background-color: red;
+}
+
+#main #group-btn {
+    width: min-content;
+    margin: 20px auto;
+}
+
+#group-btn button {
+    text-align: center;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    #banner {
+        width: 90%;
+        padding: 0px 10px;
+    }
+    #banner label {
+        width: 30%;
+    }
+    #banner #fullName {
+        width: 65%;
+    }
+    #banner button {
+        width: 50%;
+    }
+    #main {
+        width: 100%;
+    }
+    #main table {
+        width: 100%;
+    }
+    #main #group-btn {
+        width: min-content;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #banner {
+        width: 50%;
+    }
+    #banner label {
+        width: 20%;
+    }
+    #banner #fullName {
+        width: 75%;
+    }
+    #main {
+        width: 100%;
+    }
+    #main #group-btn {
+        width: fit-content;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #banner {
+        width: 30%;
+    }
+    #banner label {
+        width: 30%;
+    }
+    #banner #fullName {
+        width: 65%;
+    }
+    #main {
+        width: 80%;
+    }
+    #main #group-btn {
+        width: fit-content;
+    }
+}
+
+.bgRed {
+    background-color: red;
+}
+
+.errorGrade {
+    border: 3px outset red;
+}
